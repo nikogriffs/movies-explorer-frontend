@@ -1,0 +1,12 @@
+.about-project {
+  outline: 2px solid red;
+  min-height: 608px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-project__container {
+  outline: 2px solid yellow;
+  margin: 110px auto;
+  /* flex-direction: column; */
+}
