@@ -5,20 +5,19 @@
   background-color: #272727;
 }
 .techs__title {
-  margin: 90px auto 26px;
+  margin: 90px auto 13px;
   font-weight: 400;
   font-size: 50px;
   line-height: 58px;
-
   text-align: center;
   letter-spacing: -0.04em;
+  max-width: 600px;
 }
-.techs__text {
-  margin: 0 auto 100px;
+.techs__description {
+  margin: 13px auto 100px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-
   text-align: center;
   letter-spacing: -0.04em;
   max-width: 460px;
@@ -27,7 +26,6 @@
 .tech-stack {
   display: grid;
   justify-content: center;
-  /* align-items: center; */
   grid-template-columns: repeat(auto-fit, minmax(84px, 90px));
   margin: 0;
   padding: 0;

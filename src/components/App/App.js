@@ -1,8 +1,8 @@
 // import React from 'react'
 import { Switch, Route } from 'react-router-dom';
-// import Header from '../Header/Header';
+import Header from '../Header/Header';
 import Main from '../Main/Main';
-// import Movies from '../Main/Main';
+import Movies from '../Movies/Movies';
 // import SavedMovies from '../SavedMovies/SavedMovies';
 // import Register from '../Register/Register';
 // import Login from '../Login/Login';
@@ -14,19 +14,17 @@ import './App.css';
 function App() {
   return (
     <div className="page">
-      {/* <Header /> */}
+      <Header />
 
       <Switch>
 
-        <Route>
-          <Main exact path="/" />
+        <Route exact path="/">
+          <Main />
         </Route>
 
-
-
-        {/* <Route>
-          <Movies path="/movies" />
-        </Route> */}
+        <Route path="/movies">
+          <Movies />
+        </Route>
 
         {/* <Route>
           <SavedMovies path="/saved-movies" />
