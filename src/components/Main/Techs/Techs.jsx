@@ -1,9 +1,8 @@
-import SectionTitle from '../SectionTitle/SectionTitle'
-import './Techs.css'
-
+import React from 'react';
+import SectionTitle from '../SectionTitle/SectionTitle';
+import './Techs.css';
 
 function Techs() {
-
   return (
     <section className="techs">
 

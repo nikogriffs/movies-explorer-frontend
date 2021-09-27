@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
@@ -8,8 +8,8 @@ import Movies from '../Movies/Movies';
 // import Login from '../Login/Login';
 // import Profile from '../Profile/Profile';
 // import Footer from '../Footer/Footer';
-import './App.css';
 
+import './App.css';
 
 function App() {
   return (
@@ -17,11 +17,9 @@ function App() {
       <Header />
 
       <Switch>
-
         <Route exact path="/">
           <Main />
         </Route>
-
         <Route path="/movies">
           <Movies />
         </Route>
@@ -35,13 +33,12 @@ function App() {
         </Route>
 
         <Route>
-          <Login path="/signin" />
+          <Login path="/signin" />F
         </Route>
 
         <Route>
           <Profile path="/profile" />
         </Route> */}
-
       </Switch>
 
       {/* <Footer /> */}

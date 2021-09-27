@@ -1,10 +1,11 @@
-import './AboutProject.css'
-import SectionTitle from '../SectionTitle/SectionTitle'
+import React from 'react';
+import './AboutProject.css';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 function AboutProject() {
   return (
     <section className="project">
-      <SectionTitle title="О проекте"/>
+      <SectionTitle title="О проекте" />
       <ul className="project__list">
         <li className="project__item project-item">
           <h3 className="project-item__title">
@@ -33,7 +34,7 @@ function AboutProject() {
         <span className="timeline-bar__tag">Front-end</span>
       </div>
     </section>
-  )
+  );
 }
 
 export default AboutProject;
