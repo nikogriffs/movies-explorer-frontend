@@ -1,8 +1,12 @@
 import React from 'react';
+import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import './Movies.css';
 
 function Movies() {
   return (
-    <h1>111</h1>
+    <main className="movies">
+      <MoviesCardList />
+    </main>
   );
 }
 

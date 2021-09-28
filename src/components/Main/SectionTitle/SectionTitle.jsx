@@ -1,6 +1,6 @@
 import React from 'react';
-import './SectionTitle.css';
 import PropTypes from 'prop-types';
+import './SectionTitle.css';
 
 function SectionTitle({ title }) {
   return (
