@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Switch>
-        <Route exact path="/">
+        <Route path="/" exact>
           <Main loggedIn />
         </Route>
 
