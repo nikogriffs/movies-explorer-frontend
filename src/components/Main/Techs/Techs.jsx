@@ -1,12 +1,10 @@
 import React from 'react';
-import SectionTitle from '../SectionTitle/SectionTitle';
 import './Techs.css';
 
 function Techs() {
   return (
-    <section className="techs">
-
-      <SectionTitle title="Технологии" />
+    <section className="techs" id="techs">
+      <h2 className="section-title techs__section-title">Технологии</h2>
 
       <h3 className="techs__title">7 технологий</h3>
       <p className="techs__description">
@@ -21,7 +19,7 @@ function Techs() {
         <li className="tech-stack__item">React</li>
         <li className="tech-stack__item">Git</li>
         <li className="tech-stack__item">Express.js</li>
-        <li className="tech-stack__item">MongoDB</li>
+        <li className="tech-stack__item">mongoDB</li>
       </ul>
 
     </section>

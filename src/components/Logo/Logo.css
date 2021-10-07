@@ -1,0 +1,16 @@
+.logo-link {
+  display: block;
+  height: 38px;
+  width: 38px;
+  transition: 0.3s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.7;
+}
+
+.logo-link__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

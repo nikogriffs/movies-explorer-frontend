@@ -1,16 +1,21 @@
 import React from 'react';
-import Navigation from '../Navigation/Navigation';
+import PropTypes from 'prop-types';
+import Navigation from './Navigation/Navigation';
+import Logo from '../Logo/Logo';
 import './Header.css';
-import logo from '../../images/logo.svg';
 
-function Header() {
+function Header({ loggedIn }) {
   return (
     <header className="header">
-      <img className="header__logo" src={logo} alt="Логотип сайта" />
-      <Navigation />
+      <Logo />
+      <Navigation loggedIn={loggedIn} />
     </header>
 
   );
 }
+
+Header.propTypes = {
+  loggedIn: PropTypes.bool.isRequired,
+};
 
 export default Header;

@@ -1,0 +1,31 @@
+.promo-links {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 96px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 10px;
+}
+
+.promo-links__item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #303030;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+@media (max-width: 480px) {
+  .promo-links {
+    gap: 6px;
+    grid-template-columns: repeat(auto-fit, 82px);
+  }
+
+  .promo-links__item {
+    font-size: 10px;
+    padding: 5px 0;
+  }
+}

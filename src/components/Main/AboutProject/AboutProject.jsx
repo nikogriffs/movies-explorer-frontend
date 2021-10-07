@@ -1,12 +1,12 @@
 import React from 'react';
 import './AboutProject.css';
-import SectionTitle from '../SectionTitle/SectionTitle';
 
 function AboutProject() {
   return (
-    <section className="project">
-      <SectionTitle title="О проекте" />
+    <section id="project" className="project">
+      <h2 className="section-title">О проекте</h2>
       <ul className="project__list">
+
         <li className="project__item project-item">
           <h3 className="project-item__title">
             Дипломный проект включал 5 этапов
@@ -16,6 +16,7 @@ function AboutProject() {
             добавление функциональности и финальные доработки.
           </p>
         </li>
+
         <li className="project__item project-item">
           <h3 className="project-item__title">
             На выполнение диплома ушло 5 недель
@@ -33,6 +34,7 @@ function AboutProject() {
         <span className="timeline-bar__tag">Back-end</span>
         <span className="timeline-bar__tag">Front-end</span>
       </div>
+
     </section>
   );
 }

@@ -1,6 +1,5 @@
-.landing-page {
-  display: flex;
-  flex-direction: column;
+.main {
   margin: 0 auto;
   max-width: 1280px;
+  min-width: 320px;
 }
