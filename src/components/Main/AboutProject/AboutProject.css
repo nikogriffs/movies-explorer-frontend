@@ -1,0 +1,139 @@
+.project {
+  padding: 110px 70px;
+}
+
+.project__list {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.project__item {
+  margin: 70px 0 110px;
+}
+
+.project-item {
+  display: grid;
+  gap: 26px;
+  height: min-content;
+}
+
+.project-item__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.04em;
+}
+
+.project-item__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.timeline-bar {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) 4fr;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.timeline-bar__backend {
+  background-color: #3ddc84;
+  padding: 9px 0 9px;
+  color: #000;
+}
+
+.timeline-bar__frontend {
+  background-color: #303030;
+  padding: 9px 0 9px;
+}
+
+.timeline-bar__tag {
+  font-weight: 500;
+  color: #8b8b8b;
+  margin-top: 14px;
+}
+
+@media (max-width: 768px) {
+  .project {
+    padding: 90px 50px;
+  }
+
+  .project__list {
+    gap: 30px;
+  }
+
+  .project__item {
+    margin: 70px 0 96px;
+  }
+
+  .project-item {
+    gap: 22px;
+  }
+
+  .project-item__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .timeline-bar__tag {
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 568px) {
+  .project {
+    padding: 70px 18px;
+  }
+
+  .project__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 56px;
+    margin: 60px 0 60px;
+  }
+
+  .project__item {
+    margin: 0;
+  }
+
+  .project-item {
+    gap: 16px;
+  }
+
+  .project-item__title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .project-item__description {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .timeline-bar {
+    grid-template-columns: minmax(100px, 1fr) 4fr;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .timeline-bar__backend {
+    padding: 11px 0 11px;
+  }
+
+  .timeline-bar__frontend {
+    padding: 11px 0 11px;
+  }
+
+  .timeline-bar__tag {
+    font-weight: 400;
+    margin-top: 10px;
+  }
+}

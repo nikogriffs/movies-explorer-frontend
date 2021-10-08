@@ -1,0 +1,12 @@
+@import url("../src/vendor/normalize.css");
+@import url("../src/vendor/fonts/inter.css");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
