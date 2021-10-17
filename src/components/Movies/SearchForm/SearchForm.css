@@ -14,6 +14,7 @@
   padding: 0;
   margin: 0 0 28px;
   border: none;
+  position: relative;
 }
 
 .search__input {
@@ -28,6 +29,19 @@
   color: #8b8b8b;
   background-color: #2f2f2f;
   border-radius: 8px;
+}
+
+.search__error {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ee3465;
+  position: absolute;
+  bottom: -20px;
+}
+
+.search__input:focus {
+border-bottom: 1px solid #fff;
 }
 
 .search__button {

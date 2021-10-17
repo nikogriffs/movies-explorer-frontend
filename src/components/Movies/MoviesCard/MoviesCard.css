@@ -25,6 +25,7 @@
 
 .movie-card__title {
   margin: 0 0 5px;
+  margin-right: 5px;
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
@@ -41,7 +42,7 @@
 
 .movie-card__save-button {
   height: 16px;
-  width: 16px;
+  min-width: 16px;
   background-color: transparent;
   border-radius: 50%;
   background-image: url("../../../images/movie-save-button.svg");

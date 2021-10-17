@@ -8,8 +8,8 @@ function Techs() {
 
       <h3 className="techs__title">7 технологий</h3>
       <p className="techs__description">
-        На курсе веб-разработки мы освоили технологии,
-        которые применили в дипломном проекте.
+        На курсе веб-разработки мы освоили технологии, которые применили в
+        дипломном проекте.
       </p>
 
       <ul className="tech-stack">
@@ -21,7 +21,6 @@ function Techs() {
         <li className="tech-stack__item">Express.js</li>
         <li className="tech-stack__item">mongoDB</li>
       </ul>
-
     </section>
   );
 }

@@ -4,7 +4,9 @@ import './Footer.css';
 function Footer() {
   return (
     <section className="footer">
-      <p className="footer__title">Учебный проект Яндекс.Практикум х BeatFilm.</p>
+      <p className="footer__title">
+        Учебный проект Яндекс.Практикум х BeatFilm.
+      </p>
 
       <div className="footer__container">
         <p className="footer__copyright">
@@ -19,8 +21,7 @@ function Footer() {
                 className="link"
                 href="https://practicum.yandex.ru"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 Яндекс.Практикум
               </a>
             </li>
@@ -30,8 +31,7 @@ function Footer() {
                 className="link footer__link"
                 href="https://github.com/nikogriffs"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 Github
               </a>
             </li>
@@ -42,12 +42,10 @@ function Footer() {
                 // ССылка на Facebook требуется по макету (удалить после сдачи диплома)
                 href="https://ru-ru.facebook.com/"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 Facebook
               </a>
             </li>
-
           </ul>
         </nav>
       </div>

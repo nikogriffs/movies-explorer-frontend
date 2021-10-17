@@ -2,18 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './MoviesCard.css';
 
-function MoviesCard({ movie, isSavedMovies }) {
-  const [isSaved, setIsSaved] = React.useState(movie.saved);
+function MoviesCard({
+  movie,
+  isSavedMovies,
+  onLikeClick,
+  onDeleteClick,
+  isSaved,
+  image,
+  trailer,
+}) {
   const deleteButtonClassName = 'button movie-card__delete-button';
-  const saveButtonClassName = `button movie-card__save-button ${isSaved && 'movie-card__save-button_active'}`;
+  const saveButtonClassName = `button movie-card__save-button ${
+    isSaved && 'movie-card__save-button_active'
+  }`;
 
   function handleSaveClick() {
-    setIsSaved(!isSaved);
+    onLikeClick(movie);
   }
 
   function handleDeleteClick() {
-    const card = document.querySelector('.movie-card');
-    card.remove();
+    onDeleteClick(movie);
   }
 
   function getTimeFromDuration() {
@@ -24,11 +32,13 @@ function MoviesCard({ movie, isSavedMovies }) {
 
   return (
     <li className="movie-card">
-      <img className="movie-card__image" src={movie.image} alt={movie.title} />
+      <a href={trailer} target="_blank" rel="noreferrer">
+        <img className="movie-card__image" src={image} alt={movie.nameRU} />
+      </a>
 
       <div className="movie-card_container">
         <div className="movie-card__info">
-          <h2 className="movie-card__title">{movie.title}</h2>
+          <h2 className="movie-card__title">{movie.nameRU}</h2>
           <p className="movie-card__duration">{getTimeFromDuration()}</p>
         </div>
 
@@ -44,7 +54,7 @@ function MoviesCard({ movie, isSavedMovies }) {
             type="button"
             aria-label="Save"
             className={saveButtonClassName}
-            onClick={handleSaveClick}
+            onClick={isSaved ? handleDeleteClick : handleSaveClick}
           />
         )}
       </div>
@@ -54,12 +64,16 @@ function MoviesCard({ movie, isSavedMovies }) {
 
 MoviesCard.propTypes = {
   movie: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
+    nameRU: PropTypes.string.isRequired,
     duration: PropTypes.number.isRequired,
-    saved: PropTypes.bool.isRequired,
   }).isRequired,
   isSavedMovies: PropTypes.bool.isRequired,
+  onLikeClick: PropTypes.func.isRequired,
+  onDeleteClick: PropTypes.func.isRequired,
+  image: PropTypes.string.isRequired,
+  // eslint-disable-next-line react/require-default-props
+  isSaved: PropTypes.bool,
+  trailer: PropTypes.string.isRequired,
 };
 
 export default MoviesCard;

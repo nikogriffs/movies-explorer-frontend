@@ -1,10 +1,10 @@
 import React from 'react';
 import './FilterCheckbox.css';
+import PropTypes from 'prop-types';
 
-function FilterCheckbox() {
-  const [isChecked, setIsChecked] = React.useState(true);
+function FilterCheckbox({ onCheckboxClick, checked }) {
   function onChangeClick() {
-    setIsChecked(!isChecked);
+    onCheckboxClick(!checked);
   }
 
   return (
@@ -15,13 +15,17 @@ function FilterCheckbox() {
           id="filter"
           type="checkbox"
           onChange={onChangeClick}
-          checked={isChecked}
+          checked={checked}
         />
         Короткометражки
       </label>
     </fieldset>
-
   );
 }
+
+FilterCheckbox.propTypes = {
+  onCheckboxClick: PropTypes.func.isRequired,
+  checked: PropTypes.bool.isRequired,
+};
 
 export default FilterCheckbox;

@@ -11,37 +11,33 @@ function Burger({ isOpen, onClickMenu }) {
   return (
     <>
       <div className={`burger-menu ${isOpen ? 'burger-menu_active' : ''}`}>
-
-        <nav className={`burger-menu__sidebar ${isOpen ? 'burger-menu__sidebar_active' : ''}`}>
+        <nav
+          className={`burger-menu__sidebar ${
+            isOpen ? 'burger-menu__sidebar_active' : ''
+          }`}>
           <div className="burger-menu__container">
             <NavLink
               exact
               to="/"
               className="burger-menu__link link"
-              activeClassName="burger-menu__link_active"
-            >
+              activeClassName="burger-menu__link_active">
               Главная
             </NavLink>
             <NavLink
               to="/movies"
               className="burger-menu__link link"
-              activeClassName="burger-menu__link_active"
-            >
+              activeClassName="burger-menu__link_active">
               Фильмы
             </NavLink>
             <NavLink
               to="/saved-movies"
               className="burger-menu__link link"
-              activeClassName="burger-menu__link_active"
-            >
+              activeClassName="burger-menu__link_active">
               Сохранённые фильмы
             </NavLink>
           </div>
 
-          <Link
-            to="/profile"
-            className="burger-menu__profile-link link"
-          >
+          <Link to="/profile" className="burger-menu__profile-link link">
             Аккаунт
           </Link>
           <button
@@ -52,7 +48,6 @@ function Burger({ isOpen, onClickMenu }) {
           />
         </nav>
       </div>
-
     </>
   );
 }
