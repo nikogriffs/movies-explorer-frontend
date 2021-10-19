@@ -10,7 +10,6 @@ function Header({ loggedIn }) {
       <Logo />
       <Navigation loggedIn={loggedIn} />
     </header>
-
   );
 }
 

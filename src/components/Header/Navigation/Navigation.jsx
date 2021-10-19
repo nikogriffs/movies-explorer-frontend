@@ -14,6 +14,7 @@ function Navigation({ loggedIn }) {
     if (!isMobile) {
       setIsOpen(false);
     }
+
     function handleResize() {
       setIsMobile(window.innerWidth <= 768);
     }
@@ -30,65 +31,53 @@ function Navigation({ loggedIn }) {
 
   return (
     <nav className="navigation">
-      {loggedIn
-        ? (
-          <>
-            {isMobile ? (
-              <>
-                <button
-                  className="navigation__burger-button button"
-                  aria-label="Open"
-                  type="button"
-                  onClick={handleClickMenu}
-                />
-                <BurgerMenu isOpen={isOpen} onClickMenu={handleClickMenu} />
-              </>
-            ) : (
-              <>
-                <NavLink
-                  to="/movies"
-                  className="navigation__link link"
-                  activeClassName="navigation__link_active"
-                >
-                  Фильмы
-                </NavLink>
+      {loggedIn ? (
+        <>
+          {isMobile ? (
+            <>
+              <button
+                className="navigation__burger-button button"
+                aria-label="Open"
+                type="button"
+                onClick={handleClickMenu}
+              />
+              <BurgerMenu isOpen={isOpen} onClickMenu={handleClickMenu} />
+            </>
+          ) : (
+            <>
+              <NavLink
+                to="/movies"
+                className="navigation__link link"
+                activeClassName="navigation__link_active">
+                Фильмы
+              </NavLink>
 
-                <NavLink
-                  to="/saved-movies"
-                  className="navigation__link link"
-                  activeClassName="navigation__link_active"
-                >
-                  Сохранённые фильмы
-                </NavLink>
+              <NavLink
+                to="/saved-movies"
+                className="navigation__link link"
+                activeClassName="navigation__link_active">
+                Сохранённые фильмы
+              </NavLink>
 
-                <Link
-                  to="/profile"
-                  className="navigation__profile-link link"
-                >
-                  Аккаунт
-                </Link>
-              </>
-            )}
-          </>
-        )
-        : (
-          <>
-            <Link
-              to="/signup"
-              className="navigation__auth-link link"
+              <Link to="/profile" className="navigation__profile-link link">
+                Аккаунт
+              </Link>
+            </>
+          )}
+        </>
+      ) : (
+        <>
+          <Link to="/signup" className="navigation__auth-link link">
+            Регистрация
+          </Link>
 
-            >
-              Регистрация
-            </Link>
-
-            <Link
-              to="/signin"
-              className="navigation__auth-link navigation__auth-link_type_login link"
-            >
-              Войти
-            </Link>
-          </>
-        )}
+          <Link
+            to="/signin"
+            className="navigation__auth-link navigation__auth-link_type_login link">
+            Войти
+          </Link>
+        </>
+      )}
     </nav>
   );
 }

@@ -4,6 +4,7 @@
   padding: 100px 70px;
   background-color: #272727;
 }
+
 .techs__title {
   margin: 90px auto 13px;
   font-weight: 400;
@@ -13,6 +14,7 @@
   letter-spacing: -0.04em;
   max-width: 600px;
 }
+
 .techs__description {
   margin: 13px auto 100px;
   font-weight: 400;
@@ -102,6 +104,6 @@
   .tech-stack__item {
     font-size: 12px;
     line-height: 15px;
-    padding: 21px 0 21x;
+    padding: 21px 0;
   }
 }

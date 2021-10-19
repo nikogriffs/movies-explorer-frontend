@@ -1,5 +1,4 @@
 .filter-checkbox {
-  margin: 0;
   padding: 0;
   border: none;
   display: flex;
@@ -43,7 +42,7 @@
   width: 16px;
   background-color: #a0a0a0;
   border-radius: 20px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 

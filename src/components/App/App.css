@@ -47,6 +47,17 @@
   opacity: 0.8;
 }
 
+.button_disabled {
+  color: #c2c2c2;
+  pointer-events: none;
+  user-select: none;
+  background-color: #f8f8f8;
+}
+
+.movies-message {
+  margin: auto;
+}
+
 @media (max-width: 568px) {
   .section-title {
     padding-bottom: 28px;
